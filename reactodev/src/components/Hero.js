@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeroSection.css"; // Assuming CSS is in a separate file
+import "./HeroSection.css"; 
 
 const HeroSection = () => {
   return (
