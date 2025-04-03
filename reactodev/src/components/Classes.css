@@ -1,0 +1,138 @@
+.section-classes {
+    text-align: center;
+    margin-top: 0;
+    background: linear-gradient(240deg, #f6f6f6 0%, #f6f6f6 30%, #f6f6f69f 60%, #f6f6f600 30%);
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.classes-title {
+    font-weight: bold;
+    color: #355390;
+}
+
+.yellow-line {
+    width: 60px;
+    height: 5px;
+    background-color: #f39d0a;
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+.classes-content {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.class-button {
+    background-color: #355390;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.class-button.active {
+    background-color: #f39d0a;
+    border: none;
+}
+
+.class-button::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid white;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.yogapic {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.text-box,
+.image-box {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.image-box img {
+    max-width: 100%;
+}
+
+.text-box h3 {
+    text-shadow: 0px 1px, 1px 0px, 0px 1px;
+}
+
+.text-box {
+    padding-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .section-classes {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .classes-title {
+        font-size: 20px;
+    }
+
+    .yellow-line {
+        width: 40px;
+        height: 4px;
+        margin: 15px auto;
+    }
+
+    .classes-content {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .class-button {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .yogapic {
+        width: 100%;
+    }
+
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-box,
+    .image-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-box h3 {
+        font-size: 18px;
+    }
+
+    .text-box {
+        padding-bottom: 5px;
+    }
+}

@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 100;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .header.scrolled {
+    background-color: #325492;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav a {
+    font-size: 1rem;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #355592;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .join-btn {
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+  }
+  
+  .join-btn:hover {
+    background-color: whitesmoke;
+    color: cornflowerblue;
+  }
+  
+  /* Mobil Uyum */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      display: none;
+      padding: 10px;
+    }
+  
+    .nav.active {
+      display: flex;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      padding: 10px;
+    }
+  
+    .hamburger-menu .bar {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      transition: transform 0.3s ease;
+    }
+  
+    .hamburger-menu .bar.open:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .hamburger-menu .bar.open:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger-menu .bar.open:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  

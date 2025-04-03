@@ -1,0 +1,136 @@
+.bmi-section {
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    justify-content: center;
+    margin: auto;
+    gap: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .bmi-section .bmi-calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .bmi-section .bmi-calculator h1 {
+    font-size: 34px;
+    color: #355390;
+  }
+  
+  .bmi-section .bmi-calculator p {
+    font-weight: 500;
+    text-align: justify;
+    max-width: 80%;
+  }
+  
+  .bmi-section .calculator-bmi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .bmi-section .calculator-bmi h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: auto;
+  }
+  
+  .bmi-section .calculator-bmi .button-under {
+    font-size: 16px;
+    color: rgb(53, 85, 146);
+    margin-top: 10px;
+  }
+  
+  .bmi-section .bmi-calculator input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+  
+  .bmi-inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .bmi-section .bmi-buttons input {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgray;
+    color: white;
+    font-size: 16px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .bmi-section .bmi-buttons input:hover {
+    background-color: #355390;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    max-width: 500px;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar .progress {
+    height: 100%;
+    background-color: orange;
+    border-radius: 5px;
+    transition: width 1s ease;
+  }
+  
+  @media (max-width: 576px) {
+    .bmi-section {
+      flex-direction: column;
+      max-width: 90%;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    .bmi-section .bmi-calculator h1 {
+      font-size: 28px;
+    }
+  
+    .bmi-section .bmi-calculator p {
+      font-size: 14px;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .bmi-section .calculator-bmi h3 {
+      font-size: 20px;
+    }
+  
+    .bmi-inputs {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .bmi-section .bmi-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .bmi-section .bmi-buttons input {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  
+    .progress-bar {
+      max-width: 100%;
+    }
+  }
+  

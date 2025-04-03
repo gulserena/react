@@ -1,0 +1,172 @@
+.hero {
+    background-image: url(img/hero-man.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white; 
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 60%;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    align-self: flex-start;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 150px;
+    text-decoration: none;
+}
+
+.hero-text p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    background-color: rgba(14, 14, 14, 0.7);
+    text-align: left;
+    margin-left: 150px;
+}
+
+.details-btn, .power-btn, .signup-btn {
+    text-decoration: none;
+}
+
+.details-btn:hover, .power-btn:hover, .signup-btn:hover {
+    text-decoration: none;
+}
+
+.details-btn {
+    color: white;
+    border: 0.1rem solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.1rem;
+    font-weight: bold;
+    margin-left: 3px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.power-btn {
+    font-size: 1.5rem;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 0.1rem;
+    font-weight: bold;
+    margin-left: -280px;
+    padding: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    font-size: 1.5rem;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 0.1rem;
+    font-weight: bold;
+    margin-left: -250px;
+    padding: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 576px) {
+    .hero {
+        background-size: cover; 
+        padding: 1rem;
+    }
+
+    .hero-text div span {
+        font-size: 2.5rem; 
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 0.8rem;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav a {
+        color: white;
+        padding: 8px;
+        display: block;
+        font-size: 1rem;
+        margin: 8px 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hero {
+        height: auto;
+        padding: 2.5rem 0.8rem;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: auto;
+        background: none;
+    }
+
+    .details-btn,
+    .power-btn,
+    .signup-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
