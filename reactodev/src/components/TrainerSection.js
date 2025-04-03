@@ -1,5 +1,5 @@
 import React from "react";
-import "./TrainerSection.css"; // Assuming the CSS is saved as TrainerSection.css
+import "./TrainerSection.css"; 
 
 const TrainerSection = () => {
   return (
