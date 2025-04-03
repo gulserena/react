@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./ContactSection.css"; 
 
 const ContactSection = () => {
-  // Handling the "scroll to top" button visibility
+
   const [showButton, setShowButton] = useState(false);
 
   const handleScroll = () => {
